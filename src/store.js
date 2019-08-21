@@ -10,7 +10,7 @@ export default new Vuex.Store({
     isLoading: false
   },
   mutations: {
-    LOADING(state, payload) {
+    Loading(state, payload) {
       const data = state;
       data.isLoading = payload;
     },
@@ -22,7 +22,7 @@ export default new Vuex.Store({
   actions: {
     //後端post proxy代理
     PostAPI(context, url, req){
-      context.commit('LOADING', true);
+      context.commit('Loading', true);
       return new Promise((resolve, reject) => {
         axios.post(`${url}`, req)
         .then((res) => {
@@ -35,13 +35,13 @@ export default new Vuex.Store({
           reject(err)
         })
         .finally(() => {
-          context.commit('LOADING', false);
+          context.commit('Loading', false);
         })
       });
     },
     //後端get proxy代理
     GetAPI(context, req){
-      context.commit('LOADING', true);
+      context.commit('Loading', true);
       return new Promise((resolve, reject) => {
         axios.get(`${req.url}`, {
           headers: {
@@ -58,7 +58,7 @@ export default new Vuex.Store({
           reject(err);
         })
         .finally(() => {
-          context.commit('LOADING', false);
+          context.commit('Loading', false);
         })
       });
     }
