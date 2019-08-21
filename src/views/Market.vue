@@ -4,11 +4,11 @@
       <div class="container main-content mb-3">
         <div class="row">
           <div class="col-md-3">
-            <MarketSelect />
+            <MarketSelect @selector="selector" :searchType="searchType" />
           </div>
           <div class="col-md-9">
-            <MarketSearch />
-            <MarketContent />
+            <MarketSearch :selectorValue="selectorValue" @SearchValue="SearchValue" />
+            <MarketContent :selectorValue="selectorValue" @addCar="addCar" />
           </div>
         </div>
       </div>
@@ -28,6 +28,34 @@ export default {
     MarketSelect,
     MarketSearch,
     MarketContent
+  },
+  data:function(){
+    return {
+      selectorValue: '',
+      searchType: ''
+    }
+  },
+  methods:{
+    selector(name){
+      const that = this;
+      if (name == '全部顯示') {
+        that.selectorValue = '';
+      } else {
+        that.selectorValue = name;
+      }
+    },
+    SearchValue(type){
+      const that = this;
+      switch (type) {
+        case 'cancel':
+          that.searchType == '' ? that.searchType = '全部顯示' : that.searchType = '';
+          break;
+      }
+    },
+    addCar(add){
+      const that = this;
+      add ? that.$emit('addCar', true) : null;
+    }
   }
 }
 </script>
