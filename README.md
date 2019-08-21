@@ -1,34 +1,5 @@
 # online-store
 
-## Project setup
-```
-npm install
-```
+### 畫面設計出處
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+參照網上公開作品(https://www.cakeresume.com/vue%20cli3-works?locale=zh-TW)
