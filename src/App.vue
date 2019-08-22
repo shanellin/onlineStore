@@ -36,13 +36,13 @@
           <li class="list-inline-item"><a class="text-info"><i class="fab fa fa-facebook-square"></i> Facebook</a></li>
           <li class="list-inline-item"><a class="text-info"><i class="text-info"></i> About</a></li>
         </ul>
-        <p class="text-center">only for vue practice</p>
+        <p class="text-center">{{stateTemp1}} {{stateTemp2.x}} {{stateTemp3}}</p>
       </div>
     </footer>
   </div>
 </template>
 <script type="text/javascript">
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapState } from 'vuex'
   export default {
     name: 'App',
     data: function () {
@@ -54,7 +54,14 @@
       }
     },
     computed: {
-      ...mapGetters(['isLoading'])
+      ...mapGetters(['isLoading']),
+      ...mapState({
+        stateTemp1:(state) => state.stateTemp1,
+        stateTemp2:'stateTemp2'
+      }),
+      stateTemp3(){
+        return this.$store.state.stateTemp3();
+      }
     },
     methods: {
       addCar(add){

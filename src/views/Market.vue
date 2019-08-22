@@ -21,7 +21,7 @@
 import MarketSelect from '@/components/MarketSelect.vue'
 import MarketSearch from '@/components/MarketSearch.vue'
 import MarketContent from '@/components/MarketContent.vue'
-
+import { mapState } from 'vuex'
 export default {
   name: 'Market',
   components: {

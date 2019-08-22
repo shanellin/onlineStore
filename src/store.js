@@ -7,7 +7,10 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     clothList: [],
-    isLoading: false
+    isLoading: false,
+    stateTemp1: 'only',
+    stateTemp2: {x: 'for vue'},
+    stateTemp3: function(){return 'practice'}
   },
   mutations: {
     Loading(state, payload) {
