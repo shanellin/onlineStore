@@ -7,7 +7,10 @@
 
 ### 二、Template基礎用法
 1. {{}}、v-if、v-show、v-module、@click、:bind。<br>
-2. component建立。
+2. 如何使api回傳資料(非預先設好雙向綁定)響應到畫面中。<br>
+3. 了解$set用法及源碼內容。<br>
+4. 了解除了$set還有哪些方法可以使資料響應到畫面中。(push、pop...等)<br>
+5. component建立。
 
 ### 三、組件溝通
 1. 父組件傳子組件(props)。<br>
@@ -19,9 +22,12 @@
 2. 理解state、getter、mutation、action各自作用。<br>
 3. 了解以上各自可傳入的值，如：mutation(state, payload)、action(context, payload)。<br>
 4. 理解mapState、mapMutations...等之功用及mapState源碼內容，為什麼可以取得store的state值。<br>
-5. 理解...mapState的展開符...用法和為甚麼能使對象得以混入到外部對象中。
+5. 理解...mapState的展開符...用法和為甚麼要使對象得以混入到外部對象中。
 
 ### 五、Router
+...
+
+### 六、開發及生產模式
 ...
 
 ### 畫面設計出處
