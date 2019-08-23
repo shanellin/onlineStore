@@ -30,6 +30,17 @@
 ### 六、開發及生產模式
 ...
 
+### 七、發佈
+#### 本地端(nrok)：
+1. https://ngrok.com/ 註冊&登入。
+2. 下載ngrok執行檔，將ngrok.exe放進「C:\Windows\System32」。
+3. cmd下「ngrok authtoken yourKey」。
+4. cmd下「ngrok http 3000 -host-header="localhost:3000"」。
+
+#### 線上版(Firebase)：
+1. https://firebase.google.com/ 註冊&登入。
+2. 使用Hosting進行dist發佈。
+
 ### 畫面設計出處
 
 參照網上公開作品(https://www.cakeresume.com/vue%20cli3-works?locale=zh-TW)
