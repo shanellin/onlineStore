@@ -1,5 +1,5 @@
 # online-store
-(8/22)此專案主要用於熟悉vue.js 2.0
+(8/22)此專案主要用於熟悉vue.js 2.0、vue cli、vuex
 
 ### 一、Life hook
 1. 了解生命週期中的created、method、computed、watch、mounted各hook功能。<br>
