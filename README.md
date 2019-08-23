@@ -34,7 +34,7 @@
 ...
 
 ### 八、發佈
-#### 本地端(nrok)：
+#### 本地端(ngrok)：
 1. https://ngrok.com/ 註冊&登入。
 2. 下載ngrok執行檔，將ngrok.exe放進「C:\Windows\System32」。
 3. cmd下「ngrok authtoken yourKey」。
