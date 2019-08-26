@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active" v-for="(item, index) in navBarList" :key="index">
-            <a class="nav-link" href="#"><router-link :to="item.link"><i :class="item.class"></i> {{item.name}}</router-link></a>
+            <a class="nav-link"><router-link :to="{path:item.link}"><i :class="item.class"></i> {{item.name}}</router-link></a>
           </li>
         </ul>
       </div>

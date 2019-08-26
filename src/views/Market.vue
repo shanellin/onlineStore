@@ -35,6 +35,8 @@ export default {
       searchType: ''
     }
   },
+  created(){
+  },
   methods:{
     selector(name){
       const that = this;

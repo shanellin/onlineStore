@@ -10,7 +10,7 @@ export default new Vuex.Store({
     isLoading: false,
     stateTemp1: 'only',
     stateTemp2: {x: 'for vue'},
-    stateTemp3: function(){return 'practice'}
+    stateTemp3: function(){return 'practice!!'}
   },
   mutations: {
     Loading(state, payload) {

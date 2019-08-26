@@ -26,6 +26,14 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: () => import('./views/About.vue')
+    },
+    //其餘路徑返回主頁面
+    {
+      path: '*',
+      redirect: (to) => {
+        console.log(to.path);
+        return '/'
+      }
     }
   ]
 })
