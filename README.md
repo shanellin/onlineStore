@@ -35,7 +35,8 @@
 ...
 
 ### 七、開發及生產模式
-1. 透過.env、.env-dev、.env-prod區分開發/生產環境或api
+1. 透過.env、.env-dev、.env-prod區分開發/生產環境或api。
+2. 如何在package.json設定模式。
 
 ### 八、發佈
 #### 本地端(ngrok)：
