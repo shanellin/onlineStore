@@ -36,12 +36,13 @@
           <li class="list-inline-item"><a class="text-info"><i class="fab fa fa-facebook-square"></i> Facebook</a></li>
           <li class="list-inline-item"><a class="text-info"><i class="text-info"></i> About</a></li>
         </ul>
-        <p class="text-center">{{stateTemp1}} {{stateTemp2.x}} {{stateTemp3}}</p>
+        <p class="text-center">{{version}} {{stateTemp1}} {{stateTemp2.x}} {{stateTemp3}}</p>
       </div>
     </footer>
   </div>
 </template>
 <script type="text/javascript">
+//{{ process.env.VUE_APP_NAME }}
   import { mapGetters, mapState } from 'vuex'
   export default {
     name: 'App',
@@ -50,7 +51,8 @@
         navBarList: [
           {name:'Market', link:'/', class:'fas fa-bullhorn'}, {name:'Client', link:'/client', class:'fas fa-user-edit'}, {name:'Pay', link:'/pay', class:'fas fa-money-bill-wave'}, {name:'About', link:'/about', class:'fas fa-address-card'}
         ],
-        carNum: 0
+        carNum: 0,
+        version: ''
       }
     },
     computed: {
@@ -72,6 +74,7 @@
       }
     },
     created() {
+      this.version = `${process.env.VUE_APP_NAME} ${process.env.VUE_APP_VERSION}`;
     },
     components: {
     },
