@@ -1,5 +1,5 @@
 # online-store
-(8/22)此專案主要用於熟悉vue.js 2.0、vue cli、vuex
+(8/22)此專案主要用於熟悉vue.js 2.0、vue cli、vuex、vue-router
 
 ### 一、Life hook
 1. 了解生命週期中的created、method、computed、watch、mounted各hook功能。<br>
@@ -25,7 +25,11 @@
 5. 理解...mapState的展開符...用法和為甚麼要使對象得以混入到外部對象中。
 
 ### 五、Router
-...
+1. hash模式和history模式的差別，以及HTML5推出的pushState和replaceState。
+2. 了解$router的push、replace、go的用法及差異。
+3. router props傳參-query和params的使用時間(name or path)和差別(/ or ?)。
+4. 重新定向-遇到非預期路徑可重新導向至指定路徑。
+5. 路由嵌套-children。
 
 ### 六、測試
 ...
