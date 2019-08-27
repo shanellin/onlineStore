@@ -1,12 +1,10 @@
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import MarketSelect from '@/components/MarketSelect.vue'
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
-    })
-    expect(wrapper.text()).toMatch(msg)
-  })
-})
+describe('MarketSelect.vue', () => {
+  it('Selector should has four items!!', () => {
+    const wrapper = shallowMount(MarketSelect);
+    let content = wrapper.vm.$el.querySelectorAll('.sticky-top a').length;
+    expect(content).toBeGreaterThan(0);
+  });
+});
