@@ -32,7 +32,10 @@
 5. 路由嵌套-children。
 
 ### 六、測試
-...
+1. 使用jest建立單元測試。
+2. 基礎元件內容測試。
+3. promise測試。(X)
+4. vuex(store、dispatch、commit)測試。(X)
 
 ### 七、開發及生產模式
 1. 透過.env、.env-dev、.env-prod區分開發/生產環境或api。
